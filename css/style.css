@@ -1,0 +1,261 @@
+:root{
+    /* Dark Mode Elements */
+    --darkMode_darkBlue: hsl(209, 23%, 22%);
+    --darkMode_veryDarkBlue: hsl(207, 26%, 17%);
+
+    /* Light Mode Elements */
+    --lightMode_veryDarkBlue: hsl(200, 15%, 8%);
+    --lightMode_darkGray: hsl(0, 0%, 52%);
+    --lightMode_veryLightGray: hsl(0, 0%, 98%);
+
+    /* Light & Dark Mode */
+    --white: hsl(0, 0%, 100%);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+
+/* Estilos Generales */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+
+/* Comienzo del Header */
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    border: 1px solid black;
+    background: var(--darkMode_darkBlue);
+    transition: 200ms;
+}
+
+.header h1{
+    font-size: 18px;
+    color: var(--white);
+    letter-spacing: 0.5px;
+}
+
+.header__darkMode{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    height: 50%;
+    color: var(--white);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.imgMoon{
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+}
+
+.imgMoon img{
+    width: 17px;
+}
+
+/* Fin del Header */
+
+
+
+/* MAIN */
+
+.main{
+    min-width: 375px;
+    min-height: 90vh;
+    background: var(--darkMode_veryDarkBlue);
+    border: 1px solid black;
+    transition: 200ms;
+
+}
+
+/* Search */
+.search{
+    width: 305px;
+    height: 50px;
+    margin: auto;
+    margin-top: 40px;
+        
+
+    display: flex;
+}
+
+.search__img{
+    width: 20%;
+    height: 100%;
+    background: var(--darkMode_darkBlue);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.search__img img{
+    width: 25px;
+    margin-top: 13px;
+    margin-left: 30px;
+}
+
+.search__input{
+    width: 80%;
+    height: 100%;
+}
+
+.search__input input{
+    width: 100%;
+    height: 100%;
+    background: var(--darkMode_darkBlue);
+    outline: none;
+    font-size: 15px;
+    color: var(--white);
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 20px;
+}
+
+.search__input input::placeholder{
+    font-size: 15px;
+    color: var(--white);
+}
+
+/* Filter */
+.filter{
+    width: 250px;
+    height: 50px;
+    padding-right: 20px;
+    background: var(--darkMode_darkBlue);
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.filter select{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    background: var(--darkMode_darkBlue);
+    border: none;
+    color: var(--white);
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+
+
+/* Card */
+
+.card{
+    width: 300px;
+    height: 420px;
+    margin: auto;
+    margin-top: 20px;
+    background: var(--darkMode_darkBlue);
+}
+
+.card__img{
+    width: 100%;
+    height: 45%;
+}
+
+.card__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card__description{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    width: 100%;
+    height: 228px;
+    color: var(--white);
+    padding-left: 20px;
+}
+
+.card__description h2{
+    padding-top: 20px;
+}
+
+.card__description div{
+    margin-top: 25px;
+}
+
+.card__description span{
+    font-size: 18px;
+}
+
+
+.h2Href{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Light Mode */
+.lightMode{
+    transition: 200ms;
+    background: var(--lightMode_veryLightGray) !important;
+    color: black !important;
+}
+
+.lightMode::placeholder{
+    color: black !important;
+}
+
+.lightMode h2{
+    color: black;
+}
+
+.lightMode h1{
+    color: black;
+}
+
+.lightMode span{
+    color: black;
+}
+
+
+
+
+
+/* Responsive */
+
+@media only screen and (min-width: 1440px){
+    #countries-container{
+        display: grid;
+        grid-template: auto / repeat(4, 1fr);
+        gap: 20px;
+
+        min-width: 1200px;
+
+    }
+
+    .header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header h1{
+        font-size: 25px;
+    }
+
+}

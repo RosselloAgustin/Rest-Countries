@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Vanilla Countries</title>
+</head>
+<body>
+    
+
+    <header class="header">
+        <h1 class="header__title">Where in the world?</h1>
+        <div class="header__darkMode">
+            <!-- NOTA: No estoy pudiendo encontrar una luna blanca -->
+            <div class="imgMoon"><img src="./assets/icons/moonWhite.png" alt="moonDarkMode"></div>
+            <span>Dark Mode</span>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="search">
+            <div class="search__img">
+                <img src="./assets/images/search-darkMode.png" alt="">
+            </div>
+            <div class="search__input">
+                <input type="search" placeholder="Search for a country..." name="query" id="query">
+            </div>
+        </div>
+
+        <div class="filter">
+            <select name="" id="select-region">
+                <option value="" selected disabled>Filter by Region</option>
+                <option value="africa">Africa</option>
+                <option value="america">America</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europe</option>
+                <option value="oceania">Oceania</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+
+        
+        <div id="countries-container">
+
+            <!-- Dentro de este div se imprimen las cards desde Javascript -->
+
+        </div>
+
+
+
+    </main>
+
+    
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
