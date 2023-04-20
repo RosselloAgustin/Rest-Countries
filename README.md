@@ -1,32 +1,21 @@
-# Frontend Mentor - REST Countries API with color theme switcher
+## Proyecto: REST Countries
 
-Welcome! 👋
+![1681997214339](image/README/1681997214339.png "Rest-countries")
 
-Thanks for checking out this front-end coding challenge.
+## Sobre este proyecto:
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+#### ✔️ Desafío realizado gracias a la plataforma [Frontend Mentor](https://www.frontendmentor.io).
 
-**To do this challenge, you need a good understanding of HTML, CSS, and JavaScript.**
+#### ✔️ Creado con HTML, CSS y JavaScript.
 
-## The challenge
+#### ✔️ Consumo de la API de [Rest Countries](https://restcountries.com).
 
-Your challenge is to integrate with the [REST Countries API](https://restcountries.com) to pull country data and display it like in the designs.
+#### ✔️ Responsive.
 
-You can use any JavaScript framework/library on the front-end such as [React](https://reactjs.org) or [Vue](https://vuejs.org). You also have complete control over which packages you use to do things like make HTTP requests or style your project.
 
-Your users should be able to:
+### Mi aprendizaje 🚀
 
-- See all countries from the API on the homepage
-- Search for a country using an `input` field
-- Filter countries by region
-- Click on a country to see more detailed information on a separate page
-- Click through to the border countries on the detail page
-- Toggle the color scheme between light and dark mode *(optional)*
-
-## Steps for challenge solution
-
-1. Crear y definir el html necesario
-2. Crear las variables de css en `:root `
-3. Capturar los nodos necesario en el archivo .js para empezar a manipular el dom
-4. Lograr hacer un función que ejecute una solicitud http a la API de Rest Contries
-5. Crear nodos y asignarlos al contenedor correspondiente para mostrar la información que viene de la API
+* Fortalecer el entendimiento de nodos y la manipulación de los mismos. (crear elementos, borrar y agregar clases, etc.)
+* Perfeccionar el uso de operaciones asíncronas. (Async & Await)
+* Desestructuración de objetos.
+* Repaso de eventos.
