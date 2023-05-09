@@ -17,5 +17,4 @@
 
 * Fortalecer el entendimiento de nodos y la manipulación de los mismos. (crear elementos, borrar y agregar clases, etc.)
 * Perfeccionar el uso de operaciones asíncronas. (Async & Await)
-* Desestructuración de objetos.
 * Repaso de eventos.
